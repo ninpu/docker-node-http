@@ -1,5 +1,7 @@
 FROM node:10.15.3
 
+ENV APP_PATH ""
+
 # set timezone
 RUN ln -snf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
     echo Asia/Shanghai > /etc/timezone && \
